@@ -2,10 +2,10 @@
 #include <assert.h>
 #include "color.h"
 
-void testNumberToPair(int pairNumber,
+extern void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor);
-ColorPair GetColorFromPairNumber(int pairNumber);
+extern ColorPair GetColorFromPairNumber(int pairNumber);
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
