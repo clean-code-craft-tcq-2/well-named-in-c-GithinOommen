@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <assert.h>
-
 #include <color.h>
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
