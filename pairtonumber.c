@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
 #include "color.h"
-extern int GetPairNumberFromColor(const ColorPair* colorPair);
- 
-    
+
+int GetPairNumberFromColor(const ColorPair* colorPair) {
+    return colorPair->majorColor * numberOfMinorColors +
+            colorPair->minorColor + 1;
+}
+
 void testPairToNumber(
     enum MajorColor major,
     enum MinorColor minor,
