@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include <color.h>
+#include "color.h"
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
