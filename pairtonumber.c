@@ -6,6 +6,13 @@ extern void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor);
 extern ColorPair GetColorFromPairNumber(int pairNumber);
+extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
+
+void ColorPairToString(const ColorPair* colorPair, char* buffer) {
+    sprintf(buffer, "%s %s",
+        MajorColorNames[colorPair->majorColor],
+        MinorColorNames[colorPair->minorColor]);
+}
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
